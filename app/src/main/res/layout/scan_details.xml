@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="30dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="4dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/progressBar1"
+            android:text="Average File Size:" />
+
+        <TextView
+            android:id="@+id/avgFileSize"
+            android:freezesText="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textView1"
+            android:text="@string/empty_string" />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/avgFileSize"
+            android:text="10 Biggest Files:" />
+
+        <TextView
+            android:id="@+id/biggestFiles"
+            android:freezesText="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textView3"
+            android:text="@string/empty_string" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/biggestFiles"
+            android:text="5 most frequent file Extentions:" />
+
+        <TextView
+            android:id="@+id/mostFrequentFiles"
+            android:freezesText="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/textView5"
+            android:text="@string/empty_string" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startScan"
+            android:text="@string/start_scan"
+            android:layout_weight="0.7"
+            android:onClick="startScan"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/mostFrequentFiles"
+            android:layout_alignLeft="@+id/mostFrequentFiles"
+            android:layout_alignStart="@+id/mostFrequentFiles" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_scan"
+            android:id="@+id/stopScan"
+            android:onClick="stopScan"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_below="@+id/mostFrequentFiles"
+            android:layout_alignRight="@+id/mostFrequentFiles"
+            android:layout_alignEnd="@+id/mostFrequentFiles" />
+
+    </RelativeLayout>
+</ScrollView>
