@@ -13,7 +13,7 @@
     <string name="scanning_sdcard_for_files">Scanning sdcard for files</string>
     <string name="kb"> KB</string>
     <string name="empty_string">- -</string>
-    <string name="start_scan">Start Scan</string>
+    <string name="start_scan">Start</string>
     <string name="stop_scan">Stop Scan</string>
     <string name="title_activity_sdcard_details">SDCardDetails</string>
 </resources>
