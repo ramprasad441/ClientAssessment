@@ -240,15 +240,17 @@ public class ScanFragment extends Fragment {
         }
 
         private void performOrderedInsertion(ScanFile sDFile){
+
             int size = myList.size();
             int lastIndx = myList.size() - 1;
             if(lastIndx != -1){
+            	
                 while (lastIndx >= 0 && myList.get(lastIndx).size < sDFile.size){
                     lastIndx --;
                 }
                 myList.add(lastIndx+ 1, sDFile);
 
-            }else {
+            } else {
                 myList.add(0, sDFile);
             }
         }
